@@ -1,0 +1,23 @@
+@keyframes moveUpDownSlow {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes moveLateral {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+}
+/* Apply the animation to the SVG overlay */
+.movedownup {
+    animation: moveUpDownSlow  6s infinite;
+}
+.movedownleft {
+    animation: moveLateral  6s infinite;
+}
